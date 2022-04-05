@@ -1,0 +1,102 @@
+header .logo a .logo-img {
+	width: 40px;
+	transition: 0.5s ease;
+}
+header .logo a .title-img {
+	width: 50px;
+}
+header .logo a .logo-img-2 {
+	width: 40px;
+	display: none;
+}
+header .logo a .title-img-2 {
+	width: 50px;
+	display: none;
+}
+header ul li a.active {
+	color: whitesmoke;
+	text-shadow: 0 0 15px whitesmoke;
+}
+header ul li a:hover {
+	color: white;
+	text-shadow: 0 0 15px whitesmoke;
+}
+.sticky ul li a {
+	color: #402c11;
+}
+.sticky ul li a.active {
+	color: #f9b93d;
+	text-shadow: 0 0 0 #fff;
+}
+.sticky ul li a:hover {
+	color: #f9b93d;
+}
+.sticky {
+	background-color: white;
+}
+.sticky .logo a .logo-img {
+	display: none;
+}
+.sticky .logo a .title-img {
+	display: none;
+}
+.sticky .logo a .logo-img-2 {
+	display: flex;
+	width: 40px;
+	justify-content: center;
+	margin-left: 5px;
+}
+.sticky .logo a .title-img-2 {
+	display: none;
+	width: 40px;
+	justify-content: center;
+	margin-left: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+	header .logo a .logo-img {
+		display: none;
+	}
+	header .logo a .title-img {
+		display: none;
+	}
+	header .logo a .logo-img-2 {
+		width: 40px;
+		display: block;
+	}
+	header .logo a .title-img-2 {
+		width: 50px;
+		display: block;
+	}
+	header ul li a.active,
+	header ul li a:hover {
+		color: #f9b93d;
+	}
+	.sticky ul li a.active,
+	.sticky ul li a:hover {
+		color: #f9b93d;
+	}
+	.sticky .logo a .logo-img-2 {
+		display: flex;
+		width: 40px;
+		justify-content: center;
+		margin-left: 5px;
+	}
+}
+
+#pricing {
+    padding: 50px 120px;
+	/*background: whitesmoke;*/
+	background-image: url(/img/bg/bg-home-cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#pricing .title p {
+	text-shadow: 5px 5px 2px #f9b93d;
+}
+@media only screen and (max-width: 576px) {
+	#pricing {
+		padding: 50px 0;
+	}
+}
